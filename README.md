@@ -1,5 +1,6 @@
 # Find-friends-from-movie-ratings
 Problem Statement
+
 Find the list of closest friends for each user.Closest Friend =f ( a*NumMovies, b*Occupation, c*Age )
 where a+b+c=1
 
