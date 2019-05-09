@@ -1,4 +1,4 @@
-# Find-friends-from-movie-ratings
+# Find-Closestfriends-from-movie-ratings
 
 ## Tasks:
   * Write the Mapper, Combiner and Reducer routines to implement the problemstatement.
@@ -29,13 +29,15 @@ General sequence of tasks to perform:
 
 	  1.Split the dataset into 10 files.
 	  2.Run mapper.py for each of the splitted file and generate intermediate files.The intermediate result should be stored
-        in hdfs_mapper1.txt,hdfs_mapper2.txt,........ and so on.
+            in hdfs_mapper1.txt,hdfs_mapper2.txt,........ and so on.
 	  3.Make combiner.py which runs on each generated intermediate files togenerate second set of intermediate files.
 	  4.Make reducer.py to produce the final outputs.
 
 
-NOTE: This sequence may change according to your approach, i.e. if you are usingmultiple mapper-reducer etc.TO DO:To understand the assignment, the assignment is divided into following 3 tasks.Each task defines the result considering a single parameter of ‘Closest Friend’function. ​For each of the file generated (mov.txt, occ.txt, age.txt ), u1 should be
-lexicographically smaller than u2. Also the lines of file generated should belexicographically sorted according to the <u1,u2> pair.
+NOTE: This sequence may change according to your approach, i.e. if you are using multiple mapper-reducer etc.
+### TO DO:
+To understand the assignment, the assignment is divided into following 3 tasks.Each task defines the result considering a single parameter of ‘Closest Friend’function. ​For each of the file generated (mov.txt, occ.txt, age.txt ), u1 should be
+lexicographically smaller than u2. Also the lines of file generated should be lexicographically sorted according to the <u1,u2> pair.
 
 ### Task 1: 
 Calculate the number of movies that are rated same between auser pair <u1,u2>Split the appropriate file into 10 segments and follow the general sequence oftasks to make a final file ​mov.txt ​ in which each line contains key-value pairwhere key is user pair <u1,u2> and value is number of movies that are ratedsame.
